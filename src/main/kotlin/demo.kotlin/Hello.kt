@@ -1,13 +1,52 @@
 package demo.kotlin
 
 class Hello {
+    private lateinit var nickNameField: String
 
-    fun sayHello(name:String):String{
+    //隐含getter，在Java中调用的时候，可以通过getName()访问。
+    val name: String = "li"
+
+    //隐含getter 和 Setter，
+    var age: Int = 18
+
+    //自定义属性
+    var nickName: String
+        get() = this.nickNameField
+        set(value) {
+            this.nickNameField = value
+        }
+
+
+    fun sayHello(name: String): String {
         return "Hello,$name"
     }
 
+    fun sum(i: Int, b: Int): Int = i + b
 
-    fun  main(args : Array<String>) {
+
+    fun main(args: Array<String>): Unit {
         println("Hello")
     }
+
+    fun getString(objects: Any): Int? {
+        if (objects !is String) return null
+
+        return objects.length
+    }
+
+
+    fun forList(list: List<Int>) {
+        for (l in list) {
+            println(l)
+        }
+
+        for (index in list.indices) {
+            println(list[index])
+        }
+
+        for(i in 1..5){
+            println(i)
+        }
+    }
+
 }
