@@ -12,5 +12,8 @@ public class Main {
         String message = hello.sayHello("Lihu");
         System.out.println(message);
         Person person = new Person("li");
+        System.out.println(person.getName());
+        person = new Person("li", 18);
+        System.out.println(person.getAge());
     }
 }

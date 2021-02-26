@@ -2,6 +2,7 @@ package demo.java.hello;
 
 import demo.java.hello.converter.UserConverter;
 import demo.java.hello.enums.Gender;
+import demo.java.hello.model.User;
 import demo.java.hello.model.UserModel;
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;

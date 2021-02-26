@@ -1,6 +1,6 @@
 package demo.java.hello.converter;
 
-import demo.java.hello.User;
+import demo.java.hello.model.User;
 import demo.java.hello.model.UserModel;
 import org.mapstruct.Mapper;
 

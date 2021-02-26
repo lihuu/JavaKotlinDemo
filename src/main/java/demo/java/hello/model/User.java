@@ -1,4 +1,4 @@
-package demo.java.hello;
+package demo.java.hello.model;
 
 
 import demo.java.hello.enums.Gender;
@@ -6,6 +6,9 @@ import lombok.Builder;
 import lombok.Getter;
 
 
+/**
+ * @author lihu
+ */
 @Getter
 @Builder
 public class User {
