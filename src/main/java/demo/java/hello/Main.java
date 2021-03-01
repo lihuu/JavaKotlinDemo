@@ -19,5 +19,8 @@ public class Main {
         var list = new ArrayList<String>();
         var stream = list.stream();
         var sringList = List.of("A", "B", "C");
+        System.out.println(person.getName());
+        person = new Person("li", 18);
+        System.out.println(person.getAge());
     }
 }
